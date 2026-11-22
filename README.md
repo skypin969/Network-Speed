@@ -1,27 +1,26 @@
 # Network Speed
 
-Modul KernelSU Next yang mengunci mode jaringan ke NR/LTE (LTE, LTE_CA, NR) segera setelah HP selesai booting.
+A KernelSU Next module that locks the network mode to NR/LTE (LTE, LTE_CA, NR) as soon as the phone finishes booting.
 
-## Fungsi
-- Memastikan izin jaringan tetap LTE, LTE_CA, dan NR setelah reboot.
-- Jika izin berubah, modul akan mengembalikannya ke NR/LTE selama sekitar 2 menit setelah booting.
+## What it does
+- Keeps the allowed network types at LTE, LTE_CA, and NR after every reboot.
+- If the allowed types change, the module restores NR/LTE for about 2 minutes after boot.
 
-## Persyaratan
-- HP dengan root KernelSU Next.
-- Diuji di Poco X7 5G (malachite) dengan HyperOS.
+## Requirements
+- **KernelSU Next** (root) is required. This module will not work without it.
 
-## Cara pasang
-1. Unduh `Network.Speed.zip` dari halaman **Releases**.
-2. Buka KernelSU Next, pilih **Modul**, lalu **Instal dari penyimpanan** dan pilih file zip.
-3. Reboot HP.
-4. Cek mode jaringan di pengaturan. Pilihannya seharusnya langsung NR/LTE.
+## Installation
+1. Download `Network.Speed.zip` from the **Releases** page.
+2. Open KernelSU Next, go to **Modules**, choose **Install from storage**, and select the zip.
+3. Reboot the phone.
+4. Check the network mode in settings. It should be set to NR/LTE right away.
 
-## Cara hapus
-Buka KernelSU Next, pilih modul **Network Speed**, lalu hapus. Reboot setelah itu.
+## Uninstallation
+Open KernelSU Next, select the **Network Speed** module, and remove it. Reboot afterward.
 
-## Catatan
-- Modul ini memakai perintah `cmd phone set-allowed-network-types-for-users`. Jika ROM berubah, perilakunya bisa berbeda.
-- Modul ini tidak mengubah modem atau partisi apa pun.
+## Notes
+- The module uses `cmd phone set-allowed-network-types-for-users`. Behavior may differ on other ROMs.
+- The module does not modify the modem or any partition.
 
-## Pengembang
+## Developer
 Skypin 969, Telegram @Skypin969
