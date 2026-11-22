@@ -8,7 +8,7 @@ A KernelSU Next module that locks the network mode to NR/LTE (LTE, LTE_CA, NR) a
 
 ## Requirements
 - **KernelSU Next** (root) is required. This module will not work without it.
-- Tested on Poco X7 5G (malachite).
+- Tested on Poco X7 5G (malachite) with HyperOS 3.
 
 ## Installation
 1. Download `Network.Speed.zip` from the **Releases** page.
